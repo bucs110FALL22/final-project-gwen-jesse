@@ -8,30 +8,31 @@
 Come up with interfaces for 3 possible classes you think you may need for your project. Again, brainstorm a little. Nothing is *wrong*.
 
 ## Class Interface 1
-
 class Character:
 '''
-Creates the player in our maze game and sets it to the rest position (0,0) on screen. It will allow players to move on screen using the arrow keys. The mouse button on screen will allow players to click on the next level once the complete the current level. 
+Creates the player in our maze game and sets it to the rest position (0,0) on screen. It will allow players to move on screen using the arrow keys. 
 '''
   def __init__(self):
     self.position = (0,0)
-    self.uparrow()
-    self.downarrow()
+    self.up()
+    self.down()
     self.left()
     self.right()
-    self.image
-    self.mousebutton
-  
+    self.image = (str)
 
+  
 ## Class Interface 2
 class Riddle:
 '''
-The Riddle is placed at the end of each level to move on to more challanging levels in the game. It will uses text that displays the riddle using a random generator from a dictionary
+The Riddle is placed at the end of each level to move on to more challanging levels in the game. It will uses text that displays the riddle using a random generator from a dictionary.
 '''
   def __init__(self):
     self.text = str()
     self.answer_space()
-    self.random
+    
+  def dictionary():
+    random_select([#,"associated to the riddle"])
+    
 
 ## Class Interface 3
 class Maze_lines:

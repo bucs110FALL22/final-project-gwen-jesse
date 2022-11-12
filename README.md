@@ -44,7 +44,19 @@ https://replit.com/join/vmrlclcdfa-gwendolynoh
     * << A simple drawing that shows the class relationships in your code (see below for an example). This does not need to be overly detailed, but should show how your code fits into the Model/View/Controller paradigm. >>
         * ![class diagram](assets/class_diagram.jpg) 
 * Classes
-    * << You should have a list of each of your classes with a description. >>
+- class Player
+  - '''
+Creates the player in our maze game and sets it to the rest position (0,0) on screen. It will allow players to move on screen using the arrow keys. Also imports sprites which shows the different the positon the character can be so it can show movement on screen.
+'''
+-class Riddle
+'''
+The Riddle is placed at the end of each level to move on to more challanging levels in the game. It will uses text that displays the riddle using a random generator from a dictionary.
+'''
+
+-class Maze 
+'''
+The Maze line creates the boarders in the game and is used as the "wall" on the surface so that creates the puzzle the players will have to solve. It uses Turtle to draw the lines on the game using position and the turtle interface. 
+'''
 
 ## Project Structure and File List
 

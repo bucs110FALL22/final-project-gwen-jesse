@@ -1,9 +1,17 @@
+import pygame 
 
 class Controller:
   
   def __init__(self):
     #setup pygame data
-    
+    pygame.init()
+    self.window = pygame.display.set_mode()
+    window_size = pygame.display.get_window_size('the maze')
+    self.maze_background = [
+      'assets/maze.png'  
+    ]
+    self.move = True
+
   def mainloop(self):
     #select state loop
     
@@ -17,8 +25,7 @@ class Controller:
       #update data
 
       #redraw
-      
-  def gameloop(self):
+ 
       #event loop
 
       #update data

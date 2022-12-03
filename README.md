@@ -2,23 +2,22 @@
 # CS110 Project Proposal
 # << Project Title >>
 ## CS 110 Final Project
-### << Semester, Year >>
+###   Fall, 2022
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit?usp=sharing)
 
-<< [repl](#) >>
+
 https://replit.com/join/vmrlclcdfa-gwendolynoh
 
 
 << [link to demo presentation slides](#) >>
 
-### Team: << Gwen & Jesse >>
-#### << Gwendolyn Oh, Jesse Fonte >>
+### Team:  Gwen & Jesse 
+####  Gwendolyn Oh, Jesse Fonte 
 
 ***
 
 ## Project Description
-
-<< Give an overview of your project >>
+Our project is a Kahoot like game. We ask the user who is this celebrity and provide a picture of the celebrity then ask them to choose a colored box.
 
 ***    
 
@@ -73,12 +72,9 @@ The Project is broken down into the following file structure:
 ***
 
 ## Tasks and Responsibilities 
-
-   * Outline the team member roles and who was responsible for each class/method, both individual and collaborative.
-
+We worked as a team bouncing ideas off one another. Although, Jesse was responsible for getting the pictures of the celebrites and Gwen was responsible for making the quiz dictionary. Other than that, we both worked together to figure it out. 
 ## Testing
-
-* << Describe your testing strategy for your project. >>
+We did not hesistate to test. Right after we would make a loop we would test it. We also tested each step individually just to make sure that it was working, for example: making the picture appear, next we tested to make sure the picture and the boxes appeared, then we tested to make sure the boxes worked, then we kept testing to see if the quiz would work with the boxes, and so on. 
 
 ## ATP
 

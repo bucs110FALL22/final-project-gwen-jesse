@@ -1,17 +1,17 @@
 import pygame
-from controller import Controller
-#import your controller
+from src.controller import Controller
+
 
 
 def main():
+  '''
+  The main() function is what calls the Class Controller() that holds all the methods that creates this game.
+  '''
   pygame.init()
-  controller = Controller()
-
-    #Create an instance on your controller object
-    #Call your mainloop
-    
-    ###### NOTHING ELSE SHOULD GO IN main(), JUST THE ABOVE 3 LINES OF CODE ######
-
-# https://codefather.tech/blog/if-name-main-python/
+  test = Controller()
+  test.cpu_pos()
+  test.quiz_test()
+  test.gameoverloop()
+  
 if __name__ == '__main__':
-    main(controller) 
+  main() 

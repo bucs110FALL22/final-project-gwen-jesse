@@ -6,56 +6,60 @@
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit?usp=sharing)
 
 
-https://replit.com/join/vmrlclcdfa-gwendolynoh
+**https://replit.com/join/vmrlclcdfa-gwendolynoh**
 
+Google Slides; 
+**https://docs.google.com/presentation/d/1ClMwH9cy6r-x1ARuYlC4f-4gXD1kbJxvnAANKwSpp0Q/edit?usp=sharing)**
 
-<< [link to demo presentation slides](#) >>
-
-### Team:  Gwen & Jesse 
+### Team:  Group 8 
 ####  Gwendolyn Oh, Jesse Fonte 
 
 ***
 
 ## Project Description
-Our project is a Kahoot like game. We ask the user who is this celebrity and provide a picture of the celebrity then ask them to choose a colored box.
+Our project is a quiz game that askes questions related to python terms. The idea is that the more questions you get correct you plant x amount of mushrooms which you are trying to beat the computer in how many mushrooms you can plant. The goal of this game is to help you memorize common python terms while competing against the computer. 
 
 ***    
 
 ## User Interface Design
 
 - **Initial Concept**
-  - << A wireframe or drawing of the user interface concept along with a short description of the interface. You should have one for each screen in your program. For example, if your program has a start screen, game screen, and game over screen, you should include a wireframe / screenshot / drawing of each one and a short description of the components. >>
-    
+  -[initial game screen] (assets/initialgamestart.jpg)
+  '''
+  The initial game screen was based off of random celebrities in which the player has to guess the right one to move onto the next quyestion.
+  '''
+  -[initial game end screen] (etc/initialgamestart.jpg)
+  '''
+  The initial game end screen did not change it is just game over put onto the screen
+  '''
+  -[initial design] (etc/initial.jpg)
+  '''
+  The initial design was to guess the celebrity but then that idea changed to a quiz game that is more useful
+  '''
     
 - **Final GUI**
-  - << You should also have a screenshot of each screen for your final GUI >>
+  - [Game Screen] (etc/gamescreen.png)
+  - [Game Over Screen] (etc/gameoverscreen.png)
 
 ***        
 
 ## Program Design
 
 * Non-Standard libraries
-    * << You should have a list of any additional libraries or modules used (pygame, request) beyond non-standard python. 
-         For each additional module you should include
-         - url for the module documentation
-         - a short description of the module >>
+    
 * Class Interface Design
-    * << A simple drawing that shows the class relationships in your code (see below for an example). This does not need to be overly detailed, but should show how your code fits into the Model/View/Controller paradigm. >>
-        * ![class diagram](assets/class_diagram.jpg) 
+  [class diagram](src/85708.jpg) 
+
 * Classes
-- class Player
+- class Controller
   - '''
-Creates the player in our maze game and sets it to the rest position (0,0) on screen. It will allow players to move on screen using the arrow keys. Also imports sprites which shows the different the positon the character can be so it can show movement on screen.
+The controller is what keeps all functions. It sets up the screen in the game as well as the background and buttons. It also is where all the other functions are displayed and called. There are 3 different functions in the controller quiz_test() which is used to make the buttons on the screen work and connects the dictionary to the the the buttons. Next, we have the cpu_pos() which is the function that creates a random about of mushrooms that the player is trying to beat. Finally, gameendloop() function is what ends the game once the quiz is complete. 
 '''
--class Riddle
+-class Question
 '''
-The Riddle is placed at the end of each level to move on to more challanging levels in the game. It will uses text that displays the riddle using a random generator from a dictionary.
+The Question class is used for the dictionary to connect the questions, answers, and picture files that are connected to each question. 
 '''
 
--class Maze 
-'''
-The Maze line creates the boarders in the game and is used as the "wall" on the surface so that creates the puzzle the players will have to solve. It uses Turtle to draw the lines on the game using position and the turtle interface. 
-'''
 
 ## Project Structure and File List
 
@@ -63,16 +67,36 @@ The Project is broken down into the following file structure:
 
 * main.py
 * src
-    * << all of your python files should go here >>
+    * constants.py
+    * controller.py
+    * questions.py
+    * 
 * assets
-    * << all of your media, i.e. images, font files, etc, should go here) >>
+    * background.png
+    * cpu.png
+    * mushroom.png
+    * Q1.png
+    * Q2.png
+    * Q3.png
+    * Q4.png
+    * Q5.png
+    * Q6.png
+    * Q7.png
+    * Q8.png
+    * Q9.png
+    * Q10.png
+    * quiz-121408.mp3
+    * Urban-Tribe.ttf
 * etc
-    * << This is a catch all folder for things that are not part of your project, but you want to keep with your project >>
-
+    * gameoverscreen.png
+    * gamescreen.png
+    * initial.jpg
+    * initialgameover.jpg
+    * initialgamestart.jpg 
 ***
 
 ## Tasks and Responsibilities 
-We worked as a team bouncing ideas off one another. Although, Jesse was responsible for getting the pictures of the celebrites and Gwen was responsible for making the quiz dictionary. Other than that, we both worked together to figure it out. 
+We worked as a team bouncing ideas off one another. Although, Jesse was responsible for getting the pictures and the music. Gwen was responsible for making the dictionaries and the colored buttons. Other than that, we both worked together to figure it out. 
 ## Testing
 We did not hesistate to test. Right after we would make a loop we would test it. We also tested each step individually just to make sure that it was working, for example: making the picture appear, next we tested to make sure the picture and the boxes appeared, then we tested to make sure the boxes worked, then we kept testing to see if the quiz would work with the boxes, and so on. 
 
@@ -80,6 +104,7 @@ We did not hesistate to test. Right after we would make a loop we would test it.
 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
-etc...
+|  1                   | Open terminal and enter: python3 main.py|Screen should appear with python quiz on the right with 4 different color boxes which are the buttons.  | 
+|  2                   | Click with mouse on the color you believe is the correct answer   | -If correct the shell will print "You are correct!!" and a mushroom will appear on the screen -Tf incorrect "Sorry try again :(" will be displayed in the shell and move to the next question   |
+|3                     | Keep answering question by pressing the colors associated to what you believe is the correct answer choice in the shell | -When quiz is over you score will print in the shell and the number of mushrooms displayed is how many answers you got correct. -If the amount of mushrooms you planeted is greater than the blue mushroom (CPU) then you win. 
+    
